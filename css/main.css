@@ -1,0 +1,211 @@
+/* main.css: Add and override styles */
+
+.dc-data-count small {
+    /*font-family: benton-sans, sans-serif;*/
+    font-size: 16px;
+}
+
+
+.container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background: #fff;
+}
+
+.pie-chart {
+    height: 150px;
+}
+
+.dc-chart .axis text {
+    font-size: 9px;
+}
+
+text {
+    font-size: 14px;
+}
+
+#map {
+    height: 150px;
+}
+
+#control-row {
+    padding-bottom: 20px;
+}
+
+a {
+    cursor: pointer
+}
+
+body {
+    font-family: benton-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #25282A;
+}
+
+/*
+h2 {
+    font-family: benton-sans-wide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+.footer {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    color: #999999;
+    font-size: 0.875em;
+    padding: 40px 5%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: #25282A;
+}
+
+.footer .slide {
+    letter-spacing: 0.1em;
+    padding-right: 2.5em;
+    border-right: 1px solid rgba(102, 102, 102, 0.5);
+}
+
+.footer .slide .link {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.footer .slide div:hover {
+    color: #fff;
+}
+
+.footer .credit {
+    padding-left: 2.5em;
+}
+
+
+.top-header {
+
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 10.714vw;
+    padding-bottom: 10.714vw;
+    padding-left: 14.285vw;
+    padding-right: 14.285vw;
+    background-position-x: center;
+    background-position-y: center;
+*/
+}
+
+.header-text {
+    font-family: benton-sans-wide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.logo {
+    font-family: lust-script-display, sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    width: 500px;
+    padding-left: 40px;
+}
+
+.smalllogo {
+    font-family: lust-script-display, sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.powered {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.avatar-holder {
+    overflow: hidden;
+    border-radius: 26px;
+    width: 52px;
+    height: 52px;
+}
+
+.avatar-holder img {
+    width: 100%;
+    display: block;
+}
+
+.info h1 {
+    font-size: 16px;
+    line-height: 1.125em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+}
+
+
+.user-avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.username {
+    background: transparent url("../img/profile_ico_username_bw.png") left center no-repeat;
+    color: #999;
+    font-weight: 400;
+    font-size: 0.8em;
+    padding-left: 12px;
+    margin-right: 18px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.1em;
+}
+
+.filter {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.user-info{
+    padding-bottom: 25px;  
+}
+
+.sub-header
+{
+    background-color: #f6f4f4;
+    padding-left: 40px;
+padding-right: 40px;
+}
+
+.checkin-chart {
+    font-size: 12px;
+}
