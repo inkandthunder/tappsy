@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>dc.js example - Untappd Data Visualization</title>
+    <title>Tappsy - Untappd Data Visualization</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/dc.css">
     <link rel="stylesheet" type="text/css" href="css/leaflet.css">
@@ -16,7 +16,6 @@
 <div class="footer">
     <div class="slide js-pc">
         <div>
-            <!--<img src="img/beer_match.png" width="150" height="30">-->
             <div class="smalllogo">
                 <h3>Tapp'sy</h3>
             </div>
@@ -25,8 +24,7 @@
     <div class="credit">
         <p>Powered by data from <a href="https://untappd.com/" target="_blank">Untappd.</a><br/> If you think this project is cool, please <a href="https://untappd.com/supporter" target="_blank">become a Untappd supporter.</a></p>
         <p>View source on <a href="https://github.com/inkandthunder/dcjs-leaflet-untappd" target="_.blank">GitHub.</a>
-            <p>© 2019. <a href="https://inkandthunder.github.io/" target="_blank">Scott DeHaan</a>
-            </p>
+        <p>© 2019. <a href="https://inkandthunder.github.io/" target="_blank">Scott DeHaan</a></p>
     </div>
 </div>
 
@@ -38,21 +36,20 @@
     <div class="powered">
         <img src="img/untappd.png" width="105" height="28" border="0">
     </div>
-
 </div>
+
 <div class="sub-header">
-        <div class="row">
+    <div class="row">
         <div class="col-xs-12 dc-data-count dc-chart" id="">
             <h3>Check-In Explorer</h3>
         </div>
     </div>
-
     <div class="row">
         <div class="user-info col-xs-2">
             <div class="user-avatar">
                 <span class="supporter"></span>
                 <div class="avatar-holder">
-                    <a href="/user/scottdehaan"><img src="img/profile.jpg"></a>
+                    <img src="img/profile.jpg">
                 </div>
             </div>
             <div class="info">
@@ -66,11 +63,9 @@
         </small>
         </div>
     </div>
+</div>
 
-</div>    
-    
 <div class="container-fluid" style="margin-bottom: 350px;">
-    
     <div class="row" id="control-row">
         <div class="col-xs-2 pie-chart">
             <h4>YEAR <small><a id="year">reset</a></small></h4>
@@ -89,7 +84,7 @@
             <div id="map"></div>
         </div>
     </div>
-    
+
     <div class="row" style="padding-top: 25px; padding-bottom: 20px;">
         <div class="col-xs-6 col-md-3">
             <div class="dc-chart" id="chart-rating-count"></div>
@@ -105,11 +100,11 @@
         </div>
     </div>
 
-    
+
     <div class="row">
         <div class="col-xs-9" style="padding-right: 25px;">
-        
-              <h4>CHECK-INS</h4>
+
+            <h4>CHECK-INS</h4>
             <table class="table table-bordered table-striped checkin-chart" id="data-table">
                 <thead>
                     <tr class="header">
@@ -123,95 +118,39 @@
                     </tr>
                 </thead>
             </table>
- 
-            
         </div>
         <div class="col-xs-3">
-        
-                <div class="row">
-        <h4>TOP STYLES</h4>
-            <table class="table table-bordered table-striped" id="type-table">
-                <thead>
-                    <tr class="header">
-                        <th>Style</th>
-                        <th style="width: 40px;">Count</th>
-                    </tr>
-                </thead>
-            </table>
-    </div>
-            
-                <div class="row">
-                    <h4>TOP BREWERIES</h4>
-            <table class="table table-bordered table-striped" id="brewery-table">
-                <thead>
-                    <tr class="header">
-                        <th>Brewery</th>
-                        <th style="width: 40px;">Count</th>
-                    </tr>
-                </thead>
-            </table>
-    </div>
 
-
-            
+            <div class="row">
+                <h4>TOP STYLES</h4>
+                <table class="table table-bordered table-striped" id="type-table">
+                    <thead>
+                        <tr class="header">
+                            <th>Style</th>
+                            <th style="width: 40px;">Count</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="row">
+                <h4>TOP BREWERIES</h4>
+                <table class="table table-bordered table-striped" id="brewery-table">
+                    <thead>
+                        <tr class="header">
+                            <th>Brewery</th>
+                            <th style="width: 40px;">Count</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
-
-<!--
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-bordered table-striped" id="brewery-table">
-                <thead>
-                    <tr class="header">
-                        <th>Brewery</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-bordered table-striped" id="type-table">
-                <thead>
-                    <tr class="header">
-                        <th>Style</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </div>
--->
-
-<!--
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-bordered table-striped" id="data-table">
-                <thead>
-                    <tr class="header">
-                        <th>Brewery</th>
-                        <th>Beer</th>
-                        <th>Style</th>
-                        <th>My Rating</th>
-                        <th>Community Rating</th>
-                        <th>ABV %</th>
-                        <th>IBU</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </div>
--->
 </div>
 <script type="text/javascript" src="js/d3.js"></script>
 <script type="text/javascript" src="js/crossfilter.js"></script>
 <script type="text/javascript" src="js/dc.js"></script>
 <script type="text/javascript" src="js/leaflet.js"></script>
 <script type="text/javascript" src="js/underscore-min.js"></script>
-
 <script type="text/javascript">
     /* instantiate and configure map */
     var map = L.map('map');
@@ -230,7 +169,6 @@
     }).addTo(map);
 
 
-    /* Parse JSON file, create charts, draw markers on map */
     d3.json('data.json', function(error, data) {
         var beerData = data.response.beers.items;
 
@@ -239,8 +177,6 @@
         var monthFormat = d3.time.format('%b');
         var dayOfWeekFormat = d3.time.format('%a');
 
-        // normalize/parse data so dc can correctly sort & bin them
-        // I like to think of each "d" as a row in a spreadsheet
         _.each(beerData, function(d) {
             d.count = 1;
             // round to nearest 0.25
@@ -564,16 +500,8 @@
             };
         }
 
-        //    d3.selectAll('a#type').on('click', function () {
-        //    typeChart.filterAll();
-        //    dc.redrawAll();
-        //  });
-
-        // showtime!
         dc.renderAll();
-
     });
-
 </script>
 
 </html>
