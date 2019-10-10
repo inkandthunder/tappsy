@@ -1,7 +1,6 @@
 /* main.css: Add and override styles */
 
 .dc-data-count small {
-    /*font-family: benton-sans, sans-serif;*/
     font-size: 16px;
 }
 
@@ -45,14 +44,6 @@ body {
     background-color: #25282A;
 }
 
-/*
-h2 {
-    font-family: benton-sans-wide, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-*/
-
 .footer {
     position: fixed;
     z-index: -1;
@@ -87,23 +78,9 @@ h2 {
 
 
 .top-header {
-
     align-items: center;
     display: flex;
     width: 100%;
-
-    /*
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 10.714vw;
-    padding-bottom: 10.714vw;
-    padding-left: 14.285vw;
-    padding-right: 14.285vw;
-    background-position-x: center;
-    background-position-y: center;
-*/
 }
 
 .header-text {
@@ -114,7 +91,8 @@ h2 {
 }
 
 .logo {
-    font-family: lust-script-display, sans-serif;;
+    font-family: lust-script-display, sans-serif;
+    ;
     font-weight: 400;
     font-style: normal;
     color: #fff;
@@ -123,7 +101,8 @@ h2 {
 }
 
 .smalllogo {
-    font-family: lust-script-display, sans-serif;;
+    font-family: lust-script-display, sans-serif;
+    ;
     font-weight: 400;
     font-style: normal;
     color: #fff;
@@ -195,15 +174,14 @@ h2 {
     padding-right: 40px;
 }
 
-.user-info{
-    padding-bottom: 25px;  
+.user-info {
+    padding-bottom: 25px;
 }
 
-.sub-header
-{
+.sub-header {
     background-color: #f6f4f4;
     padding-left: 40px;
-padding-right: 40px;
+    padding-right: 40px;
 }
 
 .checkin-chart {
